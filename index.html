@@ -33,13 +33,13 @@
     <main id="main">
         <nav id="mobile-nav">
             <bento-sidebar id="sidebar1" side="right" hidden>
-                <ul>
-                  <li>About</li>
-                  <li>Credit Cards</li>
-                  <li>Benefits</li>
-                  <li>FAQ Page</li>
-                  <li>Contact</li>
-                  <li>Sign In <i class="fa-solid fa-circle-user fa-xl"></i></li>
+                <ul class="bento">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#benefits">Benefits</a></li>
+                  <li><a href="#credit_cards">Credit Cards</a></li>
+                  <li><a href="faq.html">FAQ page</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="signin.html">Sign In <i class="fa-solid fa-circle-user fa-xl"></i></a></li>
                 </ul>
             </bento-sidebar>
             <!--SIDEBAR CONTROL-->
@@ -51,11 +51,11 @@
                 <a href="#about" class="logo" aria-label="logo">LOGO</a>
                 <nav id="desktop-nav" aria-label="desktop navigation">
                     <ul class="nav-links" aria-label="navigation links">
-                        <li><a href="#About">About</a></li>
+                        <li><a href="#about">About</a></li>
                         <li><a href="#benefits">Benefits</a></li>
                         <li><a href="#credit_cards">Credit Cards</a></li>
                         <li><a href="faq.html">FAQ Page</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="contact.htm">Contact</a></li>
                         <li><a href="signin.html">Sign In <i class="fa-solid fa-circle-user fa-xl"></i></a></a></li>
                     </ul>
                 </nav>
@@ -73,12 +73,44 @@
                 </article>
             </div>
         </section>
-        <section id="creditcards">
+        <section id="benefits">
             <h2>Benefits</h2>
             <div class="container">
-
+                <article class="benefits-column">
+                    <i class="fa-solid fa-plane fa-2x"></i>
+                    <h3>Travel</h3>
+                    <ul>
+                        <li>10% Off Tickets</li>
+                        <li>Travel Insurance</li>
+                        <li>Trip Delay Insurance</li>
+                        <li>Car Rental Insurance</li>
+                    </ul>
+                </article>
+                <article class="benefits-column">
+                    <i class="fa-solid fa-money-check-dollar fa-2x"></i>
+                    <h3>Rewards</h3>
+                    <ul>
+                        <li>5% Cash Back</li>
+                        <li>Reedemable Points</li>
+                        <li>Purchase Protection</li>
+                        <li>Statement Credit</li>
+                    </ul>
+                </article>
+                <article class="benefits-column">
+                    <i class="fa-solid fa-credit-card fa-2x"></i>
+                    <h3>Security</h3>
+                    <ul>
+                        <li>Fraud Alerts</li>
+                        <li>Lock Card</li>
+                        <li>Global Hotline</li>
+                        <li>Card Replacement</li>
+                    </ul>
+                </article>
+                <!--END OF ARTICLES-->
             </div>
         </section>
+        <!--END OF BENEFITS SECTION-->
+
         <script>
             (async () => {
                 const sidebar = document.querySelector('#sidebar1');
@@ -89,6 +121,7 @@
                 document.querySelector('#open-sidebar').onclick = () => api.open();
             })();
         </script>
-    </main>   
+        <!--END OF SIDEBAR SCRIPT-->
+    </main>  
 </body>
 </html>

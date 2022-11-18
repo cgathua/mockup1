@@ -118,14 +118,14 @@ button[id="open-sidebar"] {
     display: block;
 }
 
+bento-sidebar[id="sidebar1"] {
+    background-color: var(--color-primary);
+}
 bento-sidebar[id="sidebar1"] li {
     padding: 2rem;
     cursor: pointer;
 }
 
-bento-sidebar[id="sidebar1"] li:hover {
-    color: var(--color-tertiary);
-}
 /* END OF MOBILE NAVIGATION STYLING */
 
 section[id="about"] {
@@ -139,7 +139,6 @@ section[id="about"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr)
     minmax(min-content, 1fr); 
-
 }
 
 .container .about-article {
@@ -152,3 +151,29 @@ section[id="about"] h1, p {
     padding: 0.5rem;
     text-align: center;
 }
+/* END OF ABOUT STYLING */
+
+section[id="benefits"] {
+    background-color: var(--color-primary);
+}
+
+section[id="benefits"] h2, h3, .benefits-column {
+    color: var(--color-secondary);
+}
+
+section[id="benefits"] .container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(min-content, 1fr);
+}
+
+article[class="benefits-column"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem; 
+    border-radius: 2px 16px;  
+    border: 1px solid var(--color-secondary);
+}
+/* END OF BENEFITS STYLING
