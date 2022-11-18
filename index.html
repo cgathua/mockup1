@@ -52,8 +52,8 @@
                 <nav id="desktop-nav" aria-label="desktop navigation">
                     <ul class="nav-links" aria-label="navigation links">
                         <li><a href="#About">About</a></li>
-                        <li><a href="#Credit_Cards">Credit Cards</a></li>
-                        <li><a href="#Benefits">Benefits</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                        <li><a href="#credit_cards">Credit Cards</a></li>
                         <li><a href="faq.html">FAQ Page</a></li>
                         <li><a href="contact.html">Contact</a></li>
                         <li><a href="signin.html">Sign In <i class="fa-solid fa-circle-user fa-xl"></i></a></a></li>
@@ -64,21 +64,31 @@
             <!--END OF HEADER-->
         </nav>
         <!--END OF MOBILE NAV-->
+        <section id="about" style="background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382 (1).avif');">
+            <div class="container">
+                <article class="about-article">
+                    <h1>Credit Card Provider</h1>
+                    <p>We are one of the fastest growing credit card companies, in America.</p>
+                    <p class="about-p"><a href="#" class="btn-primary">faq questions <i class="fa-solid fa-angle-right"></i></a></p>
+                </article>
+            </div>
+        </section>
+        <section id="creditcards">
+            <h2>Benefits</h2>
+            <div class="container">
 
-
-
-
-            <script>
-                (async () => {
-                  const sidebar = document.querySelector('#sidebar1');
-                  await customElements.whenDefined('bento-sidebar');
-                  const api = await sidebar.getApi();
+            </div>
+        </section>
+        <script>
+            (async () => {
+                const sidebar = document.querySelector('#sidebar1');
+                await customElements.whenDefined('bento-sidebar');
+                const api = await sidebar.getApi();
           
-                  // set up button actions
-                  document.querySelector('#open-sidebar').onclick = () => api.open();
-                })();
-            </script>
-        </nav>   
+                // set up button actions
+                document.querySelector('#open-sidebar').onclick = () => api.open();
+            })();
+        </script>
     </main>   
 </body>
 </html>

@@ -3,13 +3,15 @@
     --color-secondary: #E0E6EB;
     --color-tertiary: #609696;
     --color-alternate: #055043;
+    --transition: 0.3s ease;
+    --container-medium: 80%;
+    --container-large: 90%;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    list-style: none;
     text-decoration: none;
 }
 
@@ -25,7 +27,7 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: var(--container-large)
 }
 
 img {
@@ -41,13 +43,9 @@ section {
 
 section h2 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
-h1 {
- 
-    font-size: 2rem;
-}
 h1, h2, h3, p {
     color: var(--color-primary);
 }
@@ -55,7 +53,7 @@ h1, h2, h3, p {
 a {
     color: var(--color-secondary);
     cursor: pointer;
-    transition: 0.3s ease;
+    transition: var(--transition);
 }
 
 a:hover {
@@ -68,6 +66,34 @@ a:hover {
 
 .logo {
     font-size: 1.5rem;
+    display: block;
+}
+
+.btn, .btn-primary:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: var(--transition);
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: var(--color-secondary);
+    border-color: var(--color-secondary);
+
+}
+
+.btn-primary {
+    background-color: transparent;
+    color: var(--color-secondary);
+    padding: 5px 20px;
+    border: 1px solid var(--color-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: var(--transition);
 }
 
 /* END OF GENERAL STYLING */
@@ -88,8 +114,41 @@ button[id="open-sidebar"] {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     border-color: var(--color-primary);
+    position: relative;
+    display: block;
 }
 
 bento-sidebar[id="sidebar1"] li {
     padding: 2rem;
+    cursor: pointer;
+}
+
+bento-sidebar[id="sidebar1"] li:hover {
+    color: var(--color-tertiary);
+}
+/* END OF MOBILE NAVIGATION STYLING */
+
+section[id="about"] {
+    background-color: var(--color-tertiary);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section[id="about"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr)
+    minmax(min-content, 1fr); 
+
+}
+
+.container .about-article {
+    grid-column: 1/3;
+}
+
+section[id="about"] h1, p {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: var(--color-secondary);
+    padding: 0.5rem;
+    text-align: center;
 }
