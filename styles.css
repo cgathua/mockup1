@@ -145,7 +145,7 @@ section[id="about"] .container {
     grid-column: 1/3;
 }
 
-section[id="about"] h1, p {
+section[id="about"] h1, .intro, .about-p {
     background-color: rgba(0, 0, 0, 0.3);
     color: var(--color-secondary);
     padding: 0.5rem;
@@ -176,4 +176,39 @@ article[class="benefits-column"] {
     border-radius: 2px 16px;  
     border: 1px solid var(--color-secondary);
 }
-/* END OF BENEFITS STYLING
+/* END OF BENEFITS STYLING */
+
+section[id="credit_cards"] {
+    background-color: var(--color-tertiary);
+}
+
+section[id="credit_cards"] h3, p {
+    color: var(--color-primary);
+}
+
+section[id="credit_cards"] .container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: minmax(min-content, 1fr);
+}
+
+section[id="credit_cards"] p {
+    padding: 0 2rem;
+}
+ section[id="credit_cards"] h3, figcaption {
+    text-align: center;
+ }
+
+figure[class="creditcard"] {
+    padding: 1rem;
+}
+
+figcaption {
+    padding-top: 1rem;
+}
+
+.image {
+    padding: 1rem;
+}
+
+
