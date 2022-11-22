@@ -218,6 +218,7 @@ figcaption {
 }
 
 /* END OF CREDIT CARDS STYLING */
+
 footer[id="footer"] li {
     list-style: none;
 }
@@ -254,6 +255,7 @@ h2[class="footer-title"] {
 }
 
 /* END OF FOOTER STYLING */
+
 
 form {
     display: flex;
@@ -329,5 +331,72 @@ section[id="footer-main"]{
 }  
 
 /* END OF FOOTER SECTION */
+section[class="contact"] .container {
+    display: grid;
+    grid-template-columns: minmax(min-content, 1fr);
+    gap: 1rem;
+}
+
+form[action="contact-form"] {
+    background-color: var(--color-secondary);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+fieldset {
+    border: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+input, textarea, select, legend {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+.inline {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+input, textarea {
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-white);
+}
+
+label[class="label4"] input[type="submit"] {
+    display: block;
+    min-width: 60%;
+    height: 2em;
+    font-size: 1rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-color: var(--color-white);
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0;
+}
+
+section[class="contact"] aside {
+    background-color: transparent;
+    padding: 2rem;
+}
+
+ aside h3 {
+    font-size: 1.5rem;
+    color: var(--color-primary);
+    padding-bottom: 0.5rem;
+}
+
+section[class="contact"] article {
+    display: flex;
+    gap: 1rem;
+    padding-top: 2rem;
+}
 
 

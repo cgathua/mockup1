@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Credit Card Company Project</title>
+    <title>Contact Page</title>
 
     <!--SEO-->
-    <meta name="title" content="Credit Card Company Project">
-    <meta name="description" content="This is a mock up of a fictional company, made by cgathua.">
+    <meta name="title" content="Contact Page">
+    <meta name="description" content="This is a contact page, for a fictional company">
 
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="styles.css">
@@ -20,7 +20,7 @@
 
     <!--FONTAWESOME ICONS-->
     <script defer src="https://kit.fontawesome.com/4a00a82b9f.js" crossorigin="anonymous"></script>
-
+    
     <!--BENTO SIDEBAR SCRIPT-->
     <script defer type="module" src="https://cdn.ampproject.org/bento.mjs" crossorigin="anonymous"></script>
     <script defer nomodule src="https://cdn.ampproject.org/bento.js" crossorigin="anonymous"></script>
@@ -34,9 +34,9 @@
         <nav id="mobile-nav">
             <bento-sidebar id="sidebar1" side="right" hidden>
                 <ul class="bento">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#benefits">Benefits</a></li>
-                  <li><a href="#credit_cards">Credit Cards</a></li>
+                  <li><a href="index.html#about">About</a></li>
+                  <li><a href="index.html#benefits">Benefits</a></li>
+                  <li><a href="index.html#credit_cards">Credit Cards</a></li>
                   <li><a href="faq.html">FAQ page</a></li>
                   <li><a href="contact.html">Contact</a></li>
                   <li><a href="signin.html">Sign In <i class="fa-solid fa-circle-user fa-xl"></i></a></li>
@@ -51,9 +51,9 @@
                 <a href="#about" class="logo" aria-label="logo">LOGO</a>
                 <nav id="desktop-nav" aria-label="desktop navigation">
                     <ul class="nav-links" aria-label="navigation links">
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#benefits">Benefits</a></li>
-                        <li><a href="#credit_cards">Credit Cards</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#benefits">Benefits</a></li>
+                        <li><a href="index.html#credit_cards">Credit Cards</a></li>
                         <li><a href="faq.html">FAQ Page</a></li>
                         <li><a href="contact.htm">Contact</a></li>
                         <li><a href="signin.html">Sign In <i class="fa-solid fa-circle-user fa-xl"></i></a></a></li>
@@ -64,106 +64,58 @@
             <!--END OF HEADER-->
         </nav>
         <!--END OF MOBILE NAV-->
-        <section id="about" style="background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382 (1).avif');">
+        <section id="contact" class="contact" aria-label="contact section">
+            <h2>Contact</h2>
             <div class="container">
-                <article class="about-article">
-                    <h1>Credit Card Provider</h1>
-                    <p class="intro">We are one of the fastest growing credit card companies, in America.</p>
-                    <p class="about-p"><a href="#" class="btn-primary">faq questions <i class="fa-solid fa-angle-right"></i></a></p>
-                </article>
+                <form action="contact-form" aria-label="contact-form" >
+                    <fieldset>
+                        <legend>
+                            <label for="name">Name <input id="name" type="text" required="full name" aria-label="legal name"></label>
+                            <label for="email">Email <input id="email" type="email" required="current email" aria-label="valid email"></label>
+                        </legend>
+                    </fieldset>
+                    <fieldset>
+                        <legend>
+                            <label for="message">Message
+                                <textarea name="message" id="message" cols="30" rows="10" required="valid message"></textarea>
+                            </label> 
+                        </legend>
+                    </fieldset>
+                    <label for="submit" class="label4"><input type="submit" id="submit" value="Send Message" aria-label="click button"></label>
+                </form>
+                <!--END OF FORM SECTION-->
+                <aside aria-label="aside">
+                    <h3>Contact information</h3>
+                    <p>how can we help?</p>
+                    <div class="info">
+                        <article aria-label="article">
+                            <i class="fa-solid fa-envelope fa-2x"></i>
+                            <div class="details">
+                                <h4>Email</h4>
+                                <p>info@logo.com</p>
+                            </div>
+                        </article>
+                        <article aria-label="article">
+                            <i class="fa-solid fa-location-dot fa-2x"></i>
+                            <div class="details">
+                                <h4>Location</h4>
+                                <p>748 Grove Street</p>
+                                <p>Atlanta, Georgia 30144</p>
+                            </div>
+                        </article>
+                        <article aria-label="article">
+                            <i class="fa-solid fa-phone fa-2x"></i>
+                            <div class="details">
+                                <h4>Telephone</h4>
+                                <p>Weekdays 8am-5pm</p>
+                                <p>(404) 000-0001</p>
+                            </div>
+                        </article> 
+                    </div>
+                </aside>                    
             </div>
+            <!--END OF ASIDE INFORMATION-->
         </section>
-        <section id="benefits">
-            <h2>Benefits</h2>
-            <div class="container">
-                <article class="benefits-column">
-                    <i class="fa-solid fa-plane fa-2x"></i>
-                    <h3>Travel</h3>
-                    <ul>
-                        <li>10% Off Tickets</li>
-                        <li>Travel Insurance</li>
-                        <li>Trip Delay Insurance</li>
-                        <li>Car Rental Insurance</li>
-                    </ul>
-                </article>
-                <article class="benefits-column">
-                    <i class="fa-solid fa-money-check-dollar fa-2x"></i>
-                    <h3>Rewards</h3>
-                    <ul>
-                        <li>5% Cash Back</li>
-                        <li>Reedemable Points</li>
-                        <li>Purchase Protection</li>
-                        <li>Statement Credit</li>
-                    </ul>
-                </article>
-                <article class="benefits-column">
-                    <i class="fa-solid fa-credit-card fa-2x"></i>
-                    <h3>Security</h3>
-                    <ul>
-                        <li>Fraud Alerts</li>
-                        <li>Lock Card</li>
-                        <li>Global Hotline</li>
-                        <li>Card Replacement</li>
-                    </ul>
-                </article>
-                <!--END OF ARTICLES-->
-            </div>
-        </section>
-        <!--END OF BENEFITS SECTION-->
-        <section id="credit_cards">
-            <h2>Credit Cards</h2>
-            <div class="container">
-                <figure class="creditcard">
-                    <article>
-                        <picture class="image">
-                            <source srcset="./imgs/pexels-karolina-grabowska-4386476.avif" type="image/avif">
-                            <img src="./imgs/pexels-karolina-grabowska-4386476 (1).jpg" width="640" height="960" loading="lazy" alt="money">
-                        </picture>
-                        <h3>Platinum Card</h3>
-                        <p>This credit card is for well established clients, with an excellent credit score and payment history.</p>
-                        <figcaption><a href="#" class="btn">apply now <i class="fa-solid fa-angle-right"></i></a></figcaption>
-                    </article>
-                </figure>
-                <!--END OF FIRST CREDIT CARD-->
-                <figure class="creditcard">
-                    <article>
-                        <picture class="image">
-                            <source srcset="./imgs/pexels-skitterphoto-332304.avif" type="image/avif">
-                            <img src="./imgs/pexels-skitterphoto-332304 (1).jpg" width="640" height="427" loading="lazy" alt="coins">
-                        </picture>
-                        <h3>Cash Card</h3>
-                        <p>Every penny counts and with this card, each eligible purchase receives 5% cash back.</p>
-                        <figcaption><a href="#" class="btn">apply now <i class="fa-solid fa-angle-right"></i></a></figcaption>
-                    </article>
-                </figure>
-                <!--END OF SECOND CREDIT CARD-->
-                <figure class="creditcard">
-                    <article>
-                        <picture class="image">
-                            <source srcset="./imgs/pexels-rodnae-productions-7821679.avif" type="image/avif">
-                            <img src="./imgs/pexels-rodnae-productions-7821679 (1).jpg" width="640" height="427" loading="lazy" alt="credit card">
-                        </picture>
-                        <h3>Personal Card</h3>
-                        <p>This is a credit card, that is open to students and anyone who wants to establish credit.</p>
-                        <figcaption><a href="#" class="btn">apply now <i class="fa-solid fa-angle-right"></i></a></figcaption>  
-                    </article>
-                </figure>
-                <!--END OF THIRD CREDIT CARD-->
-                <figure class="creditcard">
-                    <article>
-                        <picture class="image">
-                            <source srcset="./imgs/pexels-rodnae-productions-7821685.avif" type="image/avif">
-                            <img src="./imgs/pexels-rodnae-productions-7821685 (1).jpg" width="640" height="427" loading="lazy" alt="paperwork">
-                        </picture>
-                        <h3>Business Card</h3>
-                        <p>This credit card is meant for businesses, both small and large. Excellent rates are available.</p>
-                        <figcaption><a href="#" class="btn">apply now <i class="fa-solid fa-angle-right"></i></a></figcaption> 
-                    </article>
-                    <!--END OF FINAL CREDIT CARD-->
-                </figure>
-            </div>
-        </section>
-        <!--END OF CREDIT CARDS SECTION-->
         <footer id="footer" aria-label="footer">
             <section id="footer-main">
                 <article class="footer-column">
@@ -179,9 +131,9 @@
                 <article class="footer-column">
                     <h3 class="footer-title">Permalinks</h3>
                     <ul>
-                       <li><a href="#about">About</a></li>
-                       <li><a href="#benefits">Benefits</a></li>
-                       <li><a href="#credit_cards">Credit Cards</a></li>
+                       <li><a href="index.html#about">About</a></li>
+                       <li><a href="index.html#benefits">Benefits</a></li>
+                       <li><a href="index.html#credit_cards">Credit Cards</a></li>
                        <li><a href="faq.html">FAQ page</a></li>
                        <li><a href="contact.html">Contact</a></li>
                        <li><a href="signin.html">Sign In <i class="fa-solid fa-circle-user fa-xl"></i></a></a></li>
@@ -228,7 +180,7 @@
             </section>
             <!--END OF LEGAL SECTION-->
         </footer> 
-        <!--END OF FOOTER SECTION-->   
+        <!--END OF FOOTER SECTION-->  
         <script>
             (async () => {
                 const sidebar = document.querySelector('#sidebar1');
@@ -240,6 +192,6 @@
             })();
         </script>
         <!--END OF SIDEBAR SCRIPT-->
-    </main>  
+    </main>   
 </body>
 </html>
