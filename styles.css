@@ -3,6 +3,7 @@
     --color-secondary: #E0E6EB;
     --color-tertiary: #609696;
     --color-alternate: #055043;
+    --color-white: #ffffff;
     --transition: 0.3s ease;
     --container-medium: 80%;
     --container-large: 90%;
@@ -253,9 +254,7 @@ h2[class="footer-title"] {
     font-size: 1.375rem;
     padding-bottom:  0.625rem;
 }
-
-/* END OF FOOTER STYLING */
-
+/* END OF GENERAL FOOTER STYLING */
 
 form {
     display: flex;
@@ -265,7 +264,7 @@ form {
 label[class="label"] input[type="email"]{
     border: 0;
     padding: 0.625rem;
-    background-color: var(--color-secondary);
+    background-color: var(--color-white);
     margin-top: 0.3125rem;
 }
 
@@ -331,6 +330,7 @@ section[id="footer-main"]{
 }  
 
 /* END OF FOOTER SECTION */
+
 section[class="contact"] .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr);
@@ -398,5 +398,4 @@ section[class="contact"] article {
     gap: 1rem;
     padding-top: 2rem;
 }
-
-
+/* END OF CONTACT PAGE STYLING */
