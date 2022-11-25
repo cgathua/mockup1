@@ -399,3 +399,73 @@ section[class="contact"] article {
     padding-top: 2rem;
 }
 /* END OF CONTACT PAGE STYLING */
+
+section[class="application"] {
+    margin: 0 auto;
+    width: 100%;
+}
+
+section[class="application"] h2 {
+    margin: 1em auto;
+    text-align: center;
+}
+
+section[class="application"] form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+
+section[class="application"] fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 2px solid var(--color-primary);
+}
+
+section[class="application"] fieldset:last-of-type {
+    border-bottom: none;
+}
+
+section[class="application"] label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+label[class="label5"] input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-color: var(--color-white);
+    min-width: 300px;
+    text-transform: uppercase;
+}
+ 
+section[class="application"] a {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+input:focus {
+    background-color: var(--color-tertiary);
+}
+
+input:focus-visible {
+    outline: 2px solid var(--color-primary);
+    border-radius: 3px;
+}
+
+select:focus-visible {
+    outline: 2px solid var(--color-primary);
+    border-radius: 3px;
+}
+
+.drop_down_menu {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+}
