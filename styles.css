@@ -23,6 +23,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
+    width: 100vw;
     line-height: 1.75;
 }
 
@@ -68,6 +69,7 @@ a:hover {
 .logo {
     font-size: 1.5rem;
     display: block;
+    position: relative;
 }
 
 .btn, .btn-primary:hover {
@@ -106,8 +108,6 @@ nav[id="mobile-nav"] {
     align-items: center;
     background-color: var(--color-primary);
     position: relative;
-    top: 0;
-    left: 0;
 }
 
 button[id="open-sidebar"] {
@@ -163,6 +163,7 @@ section[id="benefits"] h2, h3, .benefits-column {
     color: var(--color-secondary);
 }
 
+
 section[id="benefits"] .container {
     display: grid;
     gap: 1rem;
@@ -170,13 +171,13 @@ section[id="benefits"] .container {
 }
 
 article[class="benefits-column"] {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem; 
+    padding: 1rem 5rem; 
     border-radius: 2px 16px;  
     border: 1px solid var(--color-secondary);
+}
+
+article[class="benefits-column"] p {
+    color: var(--color-secondary);
 }
 /* END OF BENEFITS STYLING */
 
@@ -334,8 +335,8 @@ section[id="footer-main"]{
 
 section[class="contact"] .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr);
     gap: 1rem;
+    grid-template-columns: minmax(min-content, 1fr);
 }
 
 form[action="contact-form"] {
@@ -408,6 +409,7 @@ textarea:focus {
 article[class="application"] {
     margin: 0 auto;
     width: 100%;
+    background-color: var(--color-white);
 }
 
 article[class="application"] h2 {
@@ -479,6 +481,7 @@ select:focus-visible {
 article[class="sign-in"] {
     width: 100%;
     margin: 0 auto;
+    background-color: var(--color-white);
 }
 
 article[class="sign-in"] h2 {
@@ -507,8 +510,6 @@ article[class="sign-in"] input[type="submit"]{
     font-size: 1.1rem;
     background-color: var(--color-primary);
     color: var(--color-secondary);
-    margin-top: 1em;
-    margin-bottom: 1em;
     min-width: 250px;
     text-transform: uppercase;
 }
@@ -531,25 +532,35 @@ article[class="sign-in"] input[type="submit"]{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 1rem;
+        padding: 0 1rem;
     }
 
     .nav-links {
         display: flex;
         justify-content: space-between;
-        gap: 3rem;   
+        gap: 4rem; 
     }
 
+    section[id="benefits"] .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    section[class="credit_section"] .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    section[class="contact"] .container {
+        grid-template-columns: minmax(min-content, 1fr)
+        minmax(min-content, 1fr);
+    }
+    
+
     article[class="sign-in"] h2 {
-        padding-top: 6rem;
+        padding-top: 4rem;
     }
 
     article[class="application"] h2 {
         padding-top: 6rem;
     }
-
-
-
-    
     
 }
