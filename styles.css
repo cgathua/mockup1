@@ -180,25 +180,25 @@ article[class="benefits-column"] {
 }
 /* END OF BENEFITS STYLING */
 
-section[id="credit_cards"] {
+section[class="credit_section"] {
     background-color: var(--color-tertiary);
 }
 
-section[id="credit_cards"] h3, p {
+section[class="credit_section"] h3, p {
     color: var(--color-primary);
 }
 
-section[id="credit_cards"] .container{
+section[class="credit_section"] .container{
     display: grid;
     gap: 1rem;
     grid-template-columns: minmax(min-content, 1fr);
 }
 
-section[id="credit_cards"] p {
+section[class="credit_section"] p {
     padding: 0 2rem;
 }
 
-section[id="credit_cards"] h3, figcaption {
+section[class="credit_section"] h3, figcaption {
     text-align: center;
 }
 
@@ -399,19 +399,23 @@ section[class="contact"] article {
     gap: 1rem;
     padding-top: 2rem;
 }
+
+textarea:focus {
+    background-color: var(--color-tertiary);
+}
 /* END OF CONTACT PAGE STYLING */
 
-section[class="application"] {
+article[class="application"] {
     margin: 0 auto;
     width: 100%;
 }
 
-section[class="application"] h2 {
+article[class="application"] h2 {
     margin: 1em auto;
     text-align: center;
 }
 
-section[class="application"] form {
+article[class="application"] form {
     width: 60vw;
     max-width: 500px;
     min-width: 300px;
@@ -419,17 +423,17 @@ section[class="application"] form {
     padding-bottom: 2em;
 }
 
-section[class="application"] fieldset {
+article[class="application"] fieldset {
     border: none;
     padding: 2rem 0;
     border-bottom: 2px solid var(--color-primary);
 }
 
-section[class="application"] fieldset:last-of-type {
+article[class="application"] fieldset:last-of-type {
     border-bottom: none;
 }
 
-section[class="application"] label {
+article[class="application"] label {
     display: block;
     margin: 0.5rem 0;
 }
@@ -447,7 +451,7 @@ label[class="label5"] input[type="submit"] {
     text-transform: uppercase;
 }
  
-section[class="application"] a {
+article[class="application"] a {
     color: var(--color-primary);
     text-decoration: underline;
 }
@@ -508,5 +512,44 @@ article[class="sign-in"] input[type="submit"]{
     min-width: 250px;
     text-transform: uppercase;
 }
+/* END OF SIGNIN STYLING */
  
- 
+@media screen and (min-width: 1024px) {
+    #sidebar1, .bento {
+        display: none;
+    }
+    
+    .buttons {
+        display: none;
+    }
+    header[id="header"] {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: var(--color-primary);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;   
+    }
+
+    article[class="sign-in"] h2 {
+        padding-top: 6rem;
+    }
+
+    article[class="application"] h2 {
+        padding-top: 6rem;
+    }
+
+
+
+    
+    
+}
