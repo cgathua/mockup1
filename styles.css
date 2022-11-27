@@ -22,7 +22,7 @@ html {
 
 body {
     font-family: 'Montserrat', sans-serif;
-    min-height: 100vh;
+    height: 100vh;
     line-height: 1.75;
 }
 
@@ -107,6 +107,8 @@ nav[id="mobile-nav"] {
     align-items: center;
     background-color: var(--color-primary);
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 button[id="open-sidebar"] {
@@ -123,7 +125,7 @@ bento-sidebar[id="sidebar1"] {
 }
 
 bento-sidebar[id="sidebar1"] li {
-    padding: 2rem;
+    padding: 1rem;
     cursor: pointer;
 }
 
@@ -506,10 +508,11 @@ article[class="sign-in"] label {
 article[class="sign-in"] input[type="submit"]{
     display: block;
     width: 60%;
-    margin: 0 auto;
+    margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
     background-color: var(--color-primary);
+    border-color: var(--color-white);
     color: var(--color-secondary);
     min-width: 250px;
     text-transform: uppercase;
