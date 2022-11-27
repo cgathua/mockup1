@@ -442,8 +442,7 @@ article[class="application"] label {
     display: block;
     margin: 0.5rem 0;
 }
-
-label[class="label5"] input[type="submit"] {
+label[class="label5"] input[type="submit"]  {
     display: block;
     width: 60%;
     margin: 1em auto;
@@ -482,8 +481,6 @@ select:focus-visible {
 /* END OF APPLY STYLING */
 
 article[class="sign-in"] {
-    width: 100%;
-    margin: 0 auto;
     background-color: var(--color-white);
 }
 
@@ -505,16 +502,9 @@ article[class="sign-in"] label {
     margin: 0.5rem 0;
 }
 
-article[class="sign-in"] input[type="submit"]{
-    display: block;
-    width: 60%;
-    margin: 1em auto;
-    height: 2em;
-    font-size: 1.1rem;
+input[class="sign_in"] {
     background-color: var(--color-primary);
-    border-color: var(--color-white);
     color: var(--color-secondary);
-    min-width: 250px;
     text-transform: uppercase;
 }
 /* END OF SIGNIN STYLING */
@@ -550,7 +540,6 @@ article[class="sign-in"] input[type="submit"]{
         grid-template-columns: repeat(2, 1fr);
     }
 
-    
 
     section[class="contact"] .container {
         grid-template-columns: minmax(min-content, 1fr)
