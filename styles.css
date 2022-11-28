@@ -61,11 +61,11 @@ a:hover {
     color: var(--color-tertiary);
 }
 
-.nav-links {
+.nav-links, .logo2 {
     display: none;
 }
 
-.logo {
+.logo1 {
     font-size: 1.5rem;
     display: block;
     position: relative;
@@ -79,6 +79,7 @@ a:hover {
     font-weight: 600;
     text-transform: uppercase;
     transition: var(--transition);
+    position: relative;
 }
 
 .btn:hover {
@@ -195,6 +196,7 @@ section[class="credit_section"] .container{
     display: grid;
     gap: 1rem;
     grid-template-columns: minmax(min-content, 1fr);
+    
 }
 
 section[class="credit_section"] p {
@@ -221,7 +223,6 @@ figcaption {
 
 footer[id="footer"] li {
     list-style: none;
-    padding: 0.25rem;
 }
 
 footer[id="footer"] {
@@ -510,10 +511,16 @@ input[class="sign_in"] {
 /* END OF SIGNIN STYLING */
  
 @media screen and (min-width: 1024px) {
-    #sidebar1, .bento {
+    #sidebar1, .bento, .logo1, #open-sidebar {
         display: none;
     }
     
+    .logo2 {
+        font-size: 1.5rem;
+        display: block;
+        position: relative;   
+    }
+
     header[id="header"] {
         position: fixed;
         width: 100%;
@@ -525,13 +532,14 @@ input[class="sign_in"] {
         align-items: center;
         padding: 0 1rem;
     }
+
     .nav-links {
         display: flex;
         justify-content: space-between;
         gap: 4rem;
+
     }
 
-  
     section[id="benefits"] .container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -540,13 +548,11 @@ input[class="sign_in"] {
         grid-template-columns: repeat(2, 1fr);
     }
 
-
     section[class="contact"] .container {
         grid-template-columns: minmax(min-content, 1fr)
         minmax(min-content, 1fr);
     }
     
-
     article[class="sign-in"] h2 {
         padding-top: 4rem;
     }
