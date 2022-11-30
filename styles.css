@@ -196,7 +196,6 @@ section[class="credit_section"] .container{
     display: grid;
     gap: 1rem;
     grid-template-columns: minmax(min-content, 1fr);
-    
 }
 
 section[class="credit_section"] p {
@@ -545,7 +544,7 @@ input[class="sign_in"] {
     }
 
     section[class="credit_section"] .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     section[class="contact"] .container {
