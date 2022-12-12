@@ -547,6 +547,16 @@ input[class="sign_in"] {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    figure[class="creditcard"] {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    figcaption {
+        margin-top: auto;
+    }
+
     section[class="contact"] .container {
         grid-template-columns: minmax(min-content, 1fr)
         minmax(min-content, 1fr);
@@ -559,4 +569,7 @@ input[class="sign_in"] {
     article[class="application"] h2 {
         padding-top: 6rem;
     }
+
+
+    
 }
