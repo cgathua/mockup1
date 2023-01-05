@@ -86,7 +86,6 @@ a:hover {
     background-color: transparent;
     color: var(--color-secondary);
     border-color: var(--color-secondary);
-
 }
 
 .btn-primary {
@@ -98,7 +97,6 @@ a:hover {
     text-transform: uppercase;
     transition: var(--transition);
 }
-
 /* END OF GENERAL STYLING */
 
 nav[id="mobile-nav"] {
@@ -129,7 +127,6 @@ bento-sidebar[id="sidebar1"] li {
     padding: 1rem;
     cursor: pointer;
 }
-
 /* END OF MOBILE NAVIGATION STYLING */
 
 section[id="about"] {
@@ -217,7 +214,6 @@ figcaption {
 .image {
     padding: 1rem;
 }
-
 /* END OF CREDIT CARDS STYLING */
 
 footer[id="footer"] li {
@@ -235,7 +231,6 @@ footer[id="footer"] a {
 
 footer[id="footer"] a:hover {
     color: var(--color-tertiary);
-
 }
 
 article[class="footer-column"] p {
@@ -252,7 +247,6 @@ section[id="footer-main"] {
     display: flex;
     flex-wrap: wrap;
 }
-
 
 h2[class="footer-title"] {
     color:var(--color-primary);
@@ -282,7 +276,6 @@ input[type="submit"] {
     margin-top: 0.3125rem;
     font-weight: 600;
 }
-
 /* END OF SIGN UP AREA STYLING */
 
 section[id="footer-socials"]{
@@ -299,7 +292,6 @@ ul[class="footer-icons"] {
 ul[class="footer-icons"] li {
     margin: 0.5rem;
 }
-
 /*  END OF SOCIAL MEDIA STYLING */
 
 section[id="footer-legal"] a {
@@ -309,8 +301,7 @@ section[id="footer-legal"] a {
 section[id="footer-legal"] {
     padding: 0.9375rem 1.875rem;
     background-color: var(--color-primary);
-    color: var(--color-secondary);
-    
+    color: var(--color-secondary);    
 }
 
 ul[class="footer-legal-items"] {
@@ -327,13 +318,11 @@ ul[class="footer-legal-items"] li {
 .footer-legal-items li:nth-of-type(2) {
     flex: 1;
 }
-
 /* END OF LEGAL SECTION STYLING */
 
 section[id="footer-main"]{
     justify-content: space-around;
 }  
-
 /* END OF FOOTER SECTION */
 
 section[class="contact"] .container {
@@ -392,7 +381,7 @@ section[class="contact"] aside {
     padding: 2rem;
 }
 
- aside h3 {
+aside h3 {
     font-size: 1.5rem;
     color: var(--color-primary);
     padding-bottom: 0.5rem;
@@ -442,6 +431,7 @@ article[class="application"] label {
     display: block;
     margin: 0.5rem 0;
 }
+
 label[class="label5"] input[type="submit"]  {
     display: block;
     width: 60%;
@@ -536,8 +526,8 @@ input[class="sign_in"] {
         display: flex;
         justify-content: space-between;
         gap: 4rem;
-
     }
+    /* END OF DESKTOP NAVBAR */
 
     section[id="benefits"] .container {
         grid-template-columns: repeat(3, 1fr);
@@ -549,8 +539,7 @@ input[class="sign_in"] {
 
     figure[class="creditcard"] {
         display: flex;
-        flex-direction: column;
-        
+        flex-direction: column; 
     }
 
     figcaption {
@@ -569,7 +558,4 @@ input[class="sign_in"] {
     article[class="application"] h2 {
         padding-top: 6rem;
     }
-
-
-    
 }
