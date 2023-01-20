@@ -196,7 +196,7 @@ section[class="credit_section"] .container{
 }
 
 section[class="credit_section"] p {
-    padding: 0 2rem;
+    text-align: left;
 }
 
 section[class="credit_section"] h3, figcaption {
