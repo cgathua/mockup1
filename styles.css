@@ -138,8 +138,7 @@ section[id="about"] {
 
 section[id="about"] .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr)
-    minmax(min-content, 1fr); 
+    grid-template-columns: minmax(min-content, 1fr); 
 }
 
 .container .about-article {
@@ -151,6 +150,13 @@ section[id="about"] h1, .intro, .about-p {
     color: var(--color-secondary);
     padding: 0.5rem;
     text-align: center;
+}
+
+.about-article svg {
+    height: 1rem;
+    width: 1rem;
+    top: .125em;
+    position: relative;
 }
 /* END OF ABOUT STYLING */
 
@@ -498,7 +504,29 @@ input[class="sign_in"] {
     text-transform: uppercase;
 }
 /* END OF SIGNIN STYLING */
- 
+
+@media screen and (min-width: 600px){
+    section[id="benefits"] .container {
+        grid-template-columns: 1fr;
+    }
+
+    section[class="credit_section"] .container {
+        grid-template-columns: 1fr;
+    }  
+}
+/* END OF SMALL SCREEN MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+    section[id="benefits"] .container  {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    section[class="credit_section"] .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+/* END OF MEDIUM SCREEN MEDIA QUERIES */
+
 @media screen and (min-width: 1024px) {
     #sidebar1, .bento, .logo1, #open-sidebar {
         display: none;
@@ -515,6 +543,8 @@ input[class="sign_in"] {
         width: 100%;
         top: 0;
         left: 0;
+        right: 0;
+        z-index: 999;
         background-color: var(--color-primary);
         display: flex;
         justify-content: space-between;
@@ -525,7 +555,7 @@ input[class="sign_in"] {
     .nav-links {
         display: flex;
         justify-content: space-between;
-        gap: 4rem;
+        gap: 2rem;
     }
     /* END OF DESKTOP NAVBAR */
 
@@ -559,3 +589,5 @@ input[class="sign_in"] {
         padding-top: 6rem;
     }
 }
+/* END OF DESKTOP MEDIA QUERIES */
+
