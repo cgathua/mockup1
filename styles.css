@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
 :root {
     --color-primary: #05141A;
     --color-secondary: #E0E6EB;
@@ -76,7 +78,6 @@ a:hover {
     color: var(--color-secondary);
     padding: 5px 20px;
     border: 1px solid transparent;
-    font-weight: 600;
     text-transform: uppercase;
     transition: var(--transition);
     position: relative;
@@ -304,6 +305,9 @@ ul[class="footer-icons"] {
 
 ul[class="footer-icons"] li {
     margin: 0.5rem;
+}
+.footer-icons svg:hover{
+    background-color: var(--color-tertiary);
 }
 /*  END OF SOCIAL MEDIA STYLING */
 
