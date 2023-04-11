@@ -179,11 +179,11 @@ article[class="benefits-column"] {
     padding: 1rem;
     border-radius: 2px 16px;  
     border: 1px solid var(--color-secondary);
-    text-align: center;
 }
 
 article[class="benefits-column"] p {
     color: var(--color-secondary);
+    text-align: center;
 }
 /* END OF BENEFITS STYLING */
 
@@ -213,8 +213,15 @@ figure[class="creditcard"] {
     padding: 1rem;
 }
 
+figcaption svg {
+    height: 1em;
+    width: 1em;
+    top: .125em;
+    position: relative;
+}
+
 figcaption {
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .image {
