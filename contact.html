@@ -61,8 +61,8 @@
                 <form action="contact-form" aria-label="contact-form" >
                     <fieldset>
                         <legend>
-                            <label for="name">Name <input id="name" type="text" required="full name" aria-label="legal name"></label>
-                            <label for="email">Email <input id="email" type="email" required="current email" aria-label="valid email"></label>
+                            <label for="name">Name <input id="name" type="text" required="full name" aria-label="legal name" autocomplete="cc-name"></label>
+                            <label for="email">Email <input id="email" type="email" required="current email" aria-label="valid email" autocomplete="email"></label>
                         </legend>
                     </fieldset>
                     <fieldset>
@@ -144,8 +144,8 @@
                     <p>Subscribe to our mailing list.</p>
                     <form action="newsletter" aria-label="signup">
                         <label for="signup-email" class="label"><input id="signup-email" type="email" placeholder="Enter your email"
-                        required="valid email" aria-label="placeholder text"></label>
-                        <label for="submit-label"><input type="submit" value="Subscribe" aria-label="submit button"></label>
+                        required="valid email" aria-label="placeholder text" autocomplete="email"></label>
+                        <label for="submit-label"><input type="submit" id="submit-label" value="Subscribe" aria-label="submit button"></label>
                     </form>
                 </article>
             </section>

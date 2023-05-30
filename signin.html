@@ -60,7 +60,7 @@
                 <form action="sign in" method="post">
                     <fieldset>
                         <legend><h2>Sign In</h2></legend>
-                        <label for="name"> User Name:<input id="name" type="text" required="full name" aria-label="legal name"></label>
+                        <label for="name"> User Name:<input id="name" type="text" required="full name" aria-label="legal name" autocomplete="username"></label>
                         <label for="password"> Password:<input id="password" name="password" type="password" required /></label>
                         <label for="remember-me" name="remember-me"><input id="remember-me" type="checkbox" class="inline"> Remember Me</label> 
                         <label for="submit"><input type="submit" id="submit" class="sign_in" value="sign in" aria-label="click button"></label>
@@ -106,8 +106,8 @@
                     <p>Subscribe to our mailing list.</p>
                     <form action="newsletter" aria-label="signup">
                         <label for="email" class="label"><input id="email" type="email" name="email" placeholder="Enter your email"
-                        required="valid email" aria-label="enter your email"></label>
-                        <label for="submit button"><input type="submit" value="Subscribe"></label>
+                        required="valid email" aria-label="enter your email" autocomplete="email"></label>
+                        <label for="submit_button"><input type="submit" id="submit_button" value="Subscribe"></label>
                     </form>
                 </article>
             </section>
