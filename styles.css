@@ -135,19 +135,18 @@ bento-sidebar[id="sidebar1"] li {
 /* END OF MOBILE NAVIGATION STYLING */
 
 section[id="about"] {
+    @supports (background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.avif')) {
+      background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.avif');
+    }
+} 
+
+section[id="about"] {
     background-color: var(--color-tertiary);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-section[id="about"] {
     background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.jpg');
-  
-    @supports (background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.avif')) {
-      background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.avif');
-    }
-} /* css fallbacks for background image */
+}
 
 section[id="about"] .container {
     display: grid;
