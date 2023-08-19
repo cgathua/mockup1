@@ -461,8 +461,6 @@ textarea:focus {
 /* END OF CONTACT PAGE STYLING */
 
 article[class="application"] {
-    margin: 0 auto;
-    width: 100%;
     background-color: var(--color-secondary);
 }
 
@@ -578,6 +576,7 @@ input[class="sign_in"] {
 /* END OF SMALL SCREEN MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
+   
     section[id="about"] .container {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -606,6 +605,10 @@ input[class="sign_in"] {
         font-size: 1.5rem;
         display: block;
         position: relative;
+    }
+
+    .container {
+        width: var(--container-medium);
     }
 
     header[id="header"] {
