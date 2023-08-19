@@ -3,8 +3,8 @@
 :root {
     --color-primary: #05141A;
     --color-secondary: #E0E6EB;
-    --color-tertiary: #609696;
-    --color-alternate: #055043;
+    --color-tertiary: #D4FAE3;
+    --color-alternate: #94949C;
     --color-white: #ffffff;
     --transition: 0.3s ease;
     --container-medium: 86%;
@@ -16,16 +16,18 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 html {
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body {
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-    line-height: 1.75; 
+    line-height: 1.75;
 }
 
 .container {
@@ -41,7 +43,7 @@ img {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 5rem 0;
 }
 
 section h2 {
@@ -49,7 +51,22 @@ section h2 {
     margin-bottom: 4rem;
 }
 
-h1, h2, h3, p {
+h1 {
+    font-size: clamp(1.5rem, 1.29rem + 1.07vw, 2.25rem);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+p {
     color: var(--color-primary);
 }
 
@@ -63,44 +80,39 @@ a:hover {
     color: var(--color-tertiary);
 }
 
-.nav-links, .logo2 {
+.nav-links,
+.logo2 {
     display: none;
 }
 
 .logo1 {
     font-size: 1.5rem;
     display: block;
-    position: relative;
 }
 
-.btn, .btn-primary:hover {
+.btn {
+    display: block;
+    position: absolute;
     background-color: var(--color-primary);
     color: var(--color-secondary);
     padding: 5px 20px;
     border: 1px solid transparent;
     text-transform: uppercase;
     transition: var(--transition);
-    position: relative;
 }
 
 .btn:hover {
     background-color: transparent;
-    color: var(--color-secondary);
-    border-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
-.btn-primary {
-    background-color: transparent;
-    color: var(--color-secondary);
-    padding: 5px 20px;
-    border: 1px solid var(--color-secondary);
-    text-transform: uppercase;
-    transition: var(--transition);
+html,
+body {
+    width: auto !important;
+    overflow-x: hidden !important
 }
 
-html, body {
-    width: auto!important; overflow-x: hidden!important
-} 
 /* END OF GENERAL STYLING */
 
 nav[id="mobile-nav"] {
@@ -131,34 +143,20 @@ bento-sidebar[id="sidebar1"] li {
     padding: 1rem;
     cursor: pointer;
 }
+
 /* END OF MOBILE NAVIGATION STYLING */
 
-section[id="about"] {
-    background-color: var(--color-tertiary);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.jpg');
-    @supports (background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.webp')) {
-        background-image: url('./imgs/pexels-nataliya-vaitkevich-6214382.webp');
-    }  
-}
 
 section[id="about"] .container {
     display: grid;
-    grid-template-columns: minmax(min-content, 1fr); 
-    place-items: end center;
+    grid-template-columns: minmax(min-content, 1fr);
+    place-items: center;
+    gap: 1rem;
 }
 
-.container .about-article {
-    grid-column: 1/3;
-}
 
-section[id="about"] h1, .intro, .about-p {
-    background-color: rgba(0, 0, 0, 0.7);
-    color: var(--color-secondary);
-    padding: 1rem;
-    text-align: center;
+.about-article p:nth-of-type(2) {
+    padding-top: 1rem;
 }
 
 .about-article svg {
@@ -167,13 +165,16 @@ section[id="about"] h1, .intro, .about-p {
     top: .125em;
     position: relative;
 }
+
 /* END OF ABOUT STYLING */
 
 section[id="benefits"] {
     background-color: var(--color-primary);
 }
 
-section[id="benefits"] h2, h3, .benefits-column {
+section[id="benefits"] h2,
+h3,
+.benefits-column {
     color: var(--color-secondary);
 }
 
@@ -186,14 +187,14 @@ section[id="benefits"] .container {
 
 article[class="benefits-column"] {
     padding: 1rem;
-    border-radius: 2px 16px;  
+    border-radius: 2px 16px;
     border: 1px solid var(--color-secondary);
 }
 
 article[class="benefits-column"] p {
     color: var(--color-secondary);
     padding-left: 1rem;
-  
+
 }
 
 article[class="benefits-column"] h3 {
@@ -205,17 +206,19 @@ article[class="benefits-column"] .svg {
     display: block;
     margin: 0 auto;
 }
+
 /* END OF BENEFITS STYLING */
 
 section[class="credit_section"] {
-    background-color: var(--color-tertiary);
+    background-color: var(--color-secondary);
 }
 
-section[class="credit_section"] h3, p {
+section[class="credit_section"] h3,
+p {
     color: var(--color-primary);
 }
 
-section[class="credit_section"] .container{
+section[class="credit_section"] .container {
     display: grid;
     gap: 1rem;
     grid-template-columns: minmax(min-content, 1fr);
@@ -225,7 +228,8 @@ section[class="credit_section"] p {
     text-align: left;
 }
 
-section[class="credit_section"] h3, figcaption {
+section[class="credit_section"] h3,
+figcaption {
     text-align: center;
 }
 
@@ -244,9 +248,16 @@ figcaption {
     padding-top: 2rem;
 }
 
+.creditcard figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .image {
     padding: 1rem;
 }
+
 /* END OF CREDIT CARDS STYLING */
 
 footer[id="footer"] li {
@@ -282,10 +293,11 @@ section[id="footer-main"] {
 }
 
 h2[class="footer-title"] {
-    color:var(--color-primary);
+    color: var(--color-primary);
     font-size: 1.375rem;
-    padding-bottom:  0.625rem;
+    padding-bottom: 0.625rem;
 }
+
 /* END OF GENERAL FOOTER STYLING */
 
 form {
@@ -293,7 +305,7 @@ form {
     flex-wrap: wrap;
 }
 
-label[class="label"] input[type="email"]{
+label[class="label"] input[type="email"] {
     border: 0;
     padding: 0.625rem;
     background-color: var(--color-white);
@@ -309,9 +321,10 @@ input[type="submit"] {
     margin-top: 0.3125rem;
     font-weight: 600;
 }
+
 /* END OF SIGN UP AREA STYLING */
 
-section[id="footer-socials"]{
+section[id="footer-socials"] {
     padding: 0 1.875rem 1.25rem;
 }
 
@@ -325,9 +338,11 @@ ul[class="footer-icons"] {
 ul[class="footer-icons"] li {
     margin: 0.5rem;
 }
-.footer-icons svg:hover{
+
+.footer-icons svg:hover {
     fill: var(--color-tertiary);
 }
+
 /*  END OF SOCIAL MEDIA STYLING */
 
 section[id="footer-legal"] a {
@@ -337,7 +352,7 @@ section[id="footer-legal"] a {
 section[id="footer-legal"] {
     padding: 0.9375rem 1.875rem;
     background-color: var(--color-primary);
-    color: var(--color-secondary);    
+    color: var(--color-secondary);
 }
 
 ul[class="footer-legal-items"] {
@@ -348,18 +363,24 @@ ul[class="footer-legal-items"] {
 
 ul[class="footer-legal-items"] li {
     margin: 0.125rem 0.625rem;
-    white-space: nowrap;   
+    white-space: nowrap;
 }
 
 .footer-legal-items li:nth-of-type(2) {
     flex: 1;
 }
+
 /* END OF LEGAL SECTION STYLING */
 
-section[id="footer-main"]{
+section[id="footer-main"] {
     justify-content: space-around;
-}  
+}
+
 /* END OF FOOTER SECTION */
+
+section[class="contact"] {
+    background-color: var(--color-secondary);
+}
 
 section[class="contact"] .container {
     display: grid;
@@ -381,7 +402,10 @@ fieldset {
     padding-bottom: 2rem;
 }
 
-input, textarea, select, legend {
+input,
+textarea,
+select,
+legend {
     width: 100%;
     margin: 10px 0 0 0;
     min-height: 2em;
@@ -393,10 +417,11 @@ input, textarea, select, legend {
     vertical-align: middle;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 label[class="label4"] input[type="submit"] {
@@ -432,12 +457,13 @@ section[class="contact"] article {
 textarea:focus {
     background-color: var(--color-tertiary);
 }
+
 /* END OF CONTACT PAGE STYLING */
 
 article[class="application"] {
     margin: 0 auto;
     width: 100%;
-    background-color: var(--color-white);
+    background-color: var(--color-secondary);
 }
 
 article[class="application"] h2 {
@@ -468,7 +494,7 @@ article[class="application"] label {
     margin: 0.5rem 0;
 }
 
-label[class="label5"] input[type="submit"]  {
+label[class="label5"] input[type="submit"] {
     display: block;
     width: 60%;
     margin: 1em auto;
@@ -480,7 +506,7 @@ label[class="label5"] input[type="submit"]  {
     min-width: 300px;
     text-transform: uppercase;
 }
- 
+
 article[class="application"] a {
     color: var(--color-primary);
     text-decoration: underline;
@@ -504,10 +530,11 @@ select:focus-visible {
     background-color: var(--color-secondary);
     color: var(--color-primary);
 }
+
 /* END OF APPLY STYLING */
 
 article[class="sign-in"] {
-    background-color: var(--color-white);
+    background-color: var(--color-secondary);
 }
 
 article[class="sign-in"] h2 {
@@ -521,6 +548,8 @@ article[class="sign-in"] form {
     min-width: 300px;
     margin: 0 auto;
     padding-bottom: 2em;
+    display: grid;
+    place-items: center;
 }
 
 article[class="sign-in"] label {
@@ -533,39 +562,50 @@ input[class="sign_in"] {
     color: var(--color-secondary);
     text-transform: uppercase;
 }
+
 /* END OF SIGNIN STYLING */
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
     section[id="benefits"] .container {
         grid-template-columns: 1fr;
     }
 
     section[class="credit_section"] .container {
         grid-template-columns: 1fr;
-    }  
+    }
 }
+
 /* END OF SMALL SCREEN MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
-    section[id="benefits"] .container  {
+    section[id="about"] .container {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    section[id="benefits"] .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     section[class="credit_section"] .container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 /* END OF MEDIUM SCREEN MEDIA QUERIES */
 
 @media screen and (min-width: 1024px) {
-    #sidebar1, .bento, .logo1, #open-sidebar {
+
+    #sidebar1,
+    .bento,
+    .logo1,
+    #open-sidebar {
         display: none;
     }
-    
+
     .logo2 {
         font-size: 1.5rem;
         display: block;
-        position: relative;   
+        position: relative;
     }
 
     header[id="header"] {
@@ -587,7 +627,12 @@ input[class="sign_in"] {
         justify-content: space-between;
         gap: 2rem;
     }
+
     /* END OF DESKTOP NAVBAR */
+
+    section[id="about"] .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     section[id="benefits"] .container {
         grid-template-columns: repeat(3, 1fr);
@@ -599,7 +644,7 @@ input[class="sign_in"] {
 
     figure[class="creditcard"] {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     figcaption {
@@ -607,10 +652,9 @@ input[class="sign_in"] {
     }
 
     section[class="contact"] .container {
-        grid-template-columns: minmax(min-content, 1fr)
-        minmax(min-content, 1fr);
+        grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
     }
-    
+
     article[class="sign-in"] h2 {
         padding-top: 4rem;
     }
@@ -619,5 +663,5 @@ input[class="sign_in"] {
         padding-top: 6rem;
     }
 }
-/* END OF DESKTOP MEDIA QUERIES */
 
+/* END OF DESKTOP MEDIA QUERIES */
