@@ -48,11 +48,11 @@ section {
 
 section h2 {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 5rem;
 }
 
 h1 {
-    font-size: clamp(1.5rem, 1.29rem + 1.07vw, 2.25rem);
+    font-size: clamp(1.5rem, 2.5vw, 2.25rem)
 }
 
 h1,
@@ -154,6 +154,9 @@ section[id="about"] .container {
     gap: 1rem;
 }
 
+.about-picture {
+    aspect-ratio: 1/1;
+}
 
 .about-article p:nth-of-type(2) {
     padding-top: 1rem;
@@ -256,6 +259,7 @@ figcaption {
 
 .image {
     padding: 1rem;
+    aspect-ratio: 16/9;
 }
 
 /* END OF CREDIT CARDS STYLING */
@@ -458,6 +462,11 @@ textarea:focus {
     background-color: var(--color-tertiary);
 }
 
+textarea:focus-visible {
+    outline: 2px solid var(--color-primary);
+    border-radius: 3px;
+}
+
 /* END OF CONTACT PAGE STYLING */
 
 .application-body {
@@ -535,19 +544,23 @@ select:focus-visible {
 
 /* END OF APPLY STYLING */
 
-article[class="sign-in"] {
-    background-color: var(--color-secondary);
+.signin-legend,
+.signin-h2,
+.user-svg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-article[class="sign-in"] h2 {
-    margin: 1em auto;
-    text-align: center;
+article[class="sign-in"] {
+    background-color: var(--color-secondary);
+    line-height: 1.2;
 }
 
 article[class="sign-in"] form {
     width: 60vw;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 250px;
     margin: 0 auto;
     padding-bottom: 2em;
     display: grid;
@@ -565,6 +578,15 @@ input[class="sign_in"] {
     text-transform: uppercase;
 }
 
+.forgot-password a {
+    color: rgb(0, 0, 225);
+    line-height: 1.75;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
 /* END OF SIGNIN STYLING */
 
 @media screen and (min-width: 600px) {
@@ -572,6 +594,7 @@ input[class="sign_in"] {
     .container {
         width: var(--container-medium);
     }
+
     section[id="benefits"] .container {
         grid-template-columns: 1fr;
     }
@@ -588,7 +611,7 @@ input[class="sign_in"] {
     .container {
         width: var(--container-medium);
     }
-   
+
     section[id="about"] .container {
         grid-template-columns: repeat(2, 1fr);
     }
