@@ -460,7 +460,7 @@ textarea:focus {
 
 /* END OF CONTACT PAGE STYLING */
 
-article[class="application"] {
+.application-body {
     background-color: var(--color-secondary);
 }
 
@@ -472,9 +472,13 @@ article[class="application"] h2 {
 article[class="application"] form {
     width: 60vw;
     max-width: 500px;
-    min-width: 300px;
+    min-width: 250px;
     margin: 0 auto;
     padding-bottom: 2em;
+    line-height: 1.2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 article[class="application"] fieldset {
@@ -501,7 +505,7 @@ label[class="label5"] input[type="submit"] {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     border-color: var(--color-white);
-    min-width: 300px;
+    min-width: 250px;
     text-transform: uppercase;
 }
 
@@ -564,6 +568,10 @@ input[class="sign_in"] {
 /* END OF SIGNIN STYLING */
 
 @media screen and (min-width: 600px) {
+
+    .container {
+        width: var(--container-medium);
+    }
     section[id="benefits"] .container {
         grid-template-columns: 1fr;
     }
@@ -576,6 +584,10 @@ input[class="sign_in"] {
 /* END OF SMALL SCREEN MEDIA QUERIES */
 
 @media screen and (min-width: 768px) {
+
+    .container {
+        width: var(--container-medium);
+    }
    
     section[id="about"] .container {
         grid-template-columns: repeat(2, 1fr);
@@ -607,10 +619,6 @@ input[class="sign_in"] {
         position: relative;
     }
 
-    .container {
-        width: var(--container-medium);
-    }
-
     header[id="header"] {
         position: fixed;
         width: 100%;
@@ -632,6 +640,10 @@ input[class="sign_in"] {
     }
 
     /* END OF DESKTOP NAVBAR */
+
+    .container {
+        width: var(--container-medium);
+    }
 
     section[id="about"] .container {
         grid-template-columns: repeat(2, 1fr);
