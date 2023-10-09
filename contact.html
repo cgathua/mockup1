@@ -74,8 +74,8 @@
                 <form action="contact-form" aria-label="contact-form">
                     <fieldset>
                         <legend>
-                            <label for="name">Name <input id="name" type="text" required="full name"
-                                aria-label="legal name" autocomplete="cc-name">
+                            <label for="name">Name <input id="name" type="text" 
+                                aria-label="legal name" autocomplete="cc-name" title="first and last name, separated by a gap" pattern="(^[a-zA-Z]{1,15} [a-zA-Z]{1,15}$)" required="full name">
                             </label>
                             <label for="email">Email <input id="email" type="email" required="current email"
                                 aria-label="valid email" autocomplete="email">

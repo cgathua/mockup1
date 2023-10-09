@@ -79,7 +79,7 @@
                     </p>
                     <p><a href="apply.html" class="btn">apply now 
                             <svg aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="feather feather-chevron-right">
                                 <polyline points="9 18 15 12 9 6"></polyline>
@@ -87,20 +87,21 @@
                         </a>
                     </p>
                 </article>
-                <picture class="about-picture">
-                    <source media="(max-width: 500px)" srcset="./imgs/5360846_Credit-card500w.avif" type="image/avif">
-                    <source media="(max-width: 500px)" srcset="./imgs/5360846_Credit-card500w.webp" type="image/webp">
-                    <source media="(max-width: 1920px)" srcset="./imgs/5360846_Credit-card.avif" type="image/avif">
-                    <source media="(max-width: 1920px)" srcset="./imgs/5360846_Credit-card.webp" type="image/webp">
-                    <img src="./imgs/5360846_Credit-card.jpg" width="1000" height="1000" alt="credit card illustration">
-                </picture>
+                <img
+                    srcset="./imgs/5360846_Credit-card500w.avif 500w, ./imgs/5360846_Credit-card500w.webp 500w, ./imgs/5360846_Credit-card.avif 1000w , ./imgs/5360846_Credit-card.webp 1000w, imgs/5360846_Credit-card.jpg 1000w"
+                    src="./imgs/5360846_Credit-card.jpg"
+                    alt="credit card" 
+                    width="1000"
+                    height="1000"
+                    class='about-picture'
+                />
             </div>
         </section>
         <section id="benefits" aria-label="benefits">
             <h2>Benefits</h2>
             <div class="container">
                 <article class="benefits-column">
-                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" min-width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-globe">
                         <circle cx="12" cy="12" r="10"></circle>
@@ -111,28 +112,28 @@
                     </svg>
                     <h3>Travel</h3>
                     <p>10% Off Tickets 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Travel Insurance 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Trip Delay Insurance 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Car Rental Insurance 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -140,7 +141,7 @@
                     </p>
                 </article>
                 <article class="benefits-column">
-                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" min-width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-dollar-sign">
                         <line x1="12" y1="1" x2="12" y2="23"></line>
@@ -148,28 +149,28 @@
                     </svg>
                     <h3>Rewards</h3>
                     <p>5% Cash Back 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Statement Credit 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Purchase Protection 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Reedemable Points 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -177,7 +178,7 @@
                     </p>
                 </article>
                 <article class="benefits-column">
-                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    <svg class="svg" xmlns="http://www.w3.org/2000/svg" min-width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                         class="feather feather-credit-card">
                         <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
@@ -185,28 +186,28 @@
                     </svg>
                     <h3>Security</h3>
                     <p>Lock Card 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Fraud Alerts 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Global Hotline 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Card Replacement 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16"
                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round" class="feather feather-check">
                             <polyline points="20 6 9 17 4 12"></polyline>
@@ -233,7 +234,7 @@
                     </article>
                     <figcaption>
                         <a href="apply.html" class="btn">apply now 
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                            <svg xmlns="http://www.w3.org/2000/svg" min-width="16"
                                 height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
                                 <polyline points="9 18 15 12 9 6"></polyline>
