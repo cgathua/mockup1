@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
-
 :root {
     --color-primary: #05141A;
     --color-secondary: #E0E6EB;
@@ -25,7 +23,8 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
+    font-weight: normal;
     min-height: 100vh;
     line-height: 1.75;
 }
@@ -136,13 +135,31 @@ button[id="open-sidebar"] {
 }
 
 bento-sidebar[id="sidebar1"] {
-    background-color: var(--color-primary);
+    background-color: var(--color-tertiary);
 }
 
 bento-sidebar[id="sidebar1"] li {
     padding: 1rem;
     cursor: pointer;
 }
+
+.bento li a {
+    color: var(--color-primary);
+    line-height: 1;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 5px 20px;
+    outline: none;
+}
+
+.bento a:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
 
 /* END OF MOBILE NAVIGATION STYLING */
 
@@ -614,15 +631,15 @@ input[class="sign_in"] {
     }
 
     section[id="about"] .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
     }
 
     section[id="benefits"] .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
     }
 
     section[class="credit_section"] .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
     }
 }
 
@@ -670,15 +687,15 @@ input[class="sign_in"] {
     }
 
     section[id="about"] .container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
     }
 
     section[id="benefits"] .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
     }
 
     section[class="credit_section"] .container {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(min-content, 1fr));
     }
 
     figure[class="creditcard"] {
@@ -691,7 +708,7 @@ input[class="sign_in"] {
     }
 
     section[class="contact"] .container {
-        grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 1fr);
+        grid-template-columns: repeat(2, minmax(min-content, 1fr));
     }
 
     article[class="sign-in"] h2 {
