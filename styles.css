@@ -98,6 +98,7 @@ a:hover {
     border: 1px solid transparent;
     text-transform: uppercase;
     transition: var(--transition);
+    cursor: pointer;
 }
 
 .btn:hover {
@@ -108,8 +109,8 @@ a:hover {
 
 html,
 body {
-    width: auto !important;
-    overflow-x: hidden !important
+    width: auto;
+    overflow-x: hidden;
 }
 
 /* END OF GENERAL STYLING */
@@ -181,8 +182,8 @@ section[id="about"] .container {
 
 .about-article svg {
     height: 1rem;
-    width: 1rem;
-    top: .125em;
+    min-width: 1rem;
+    top: .225em;
     position: relative;
 }
 
@@ -258,9 +259,9 @@ figure[class="creditcard"] {
 }
 
 figcaption svg {
-    height: 1em;
-    width: 1em;
-    top: .125em;
+    height: 1rem;
+    min-width: 1rem;
+    top: .225em;
     position: relative;
 }
 
