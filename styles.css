@@ -580,7 +580,7 @@ input[type="date"] {
 article[class="sign-in"] {
     background-color: var(--color-secondary);
     line-height: 1.2;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 article[class="sign-in"] form {
