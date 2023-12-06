@@ -27,8 +27,8 @@
 <!--END OF HEAD-->
 
 <body>
-    <main id="main" aria-label="main">
-        <nav id="mobile-nav" aria-label="mobile navigation">
+    <main>
+        <nav id="mobile-nav" aria-labelledby="mobile-nav">
             <bento-sidebar id="sidebar1" side="right" hidden>
                 <ul class="bento">
                     <li><a href="#">Home</a></li>
@@ -40,11 +40,11 @@
                 </ul>
             </bento-sidebar>
             <!--SIDEBAR CONTROL-->
-            <figure class="buttons" style="margin:0 0.5rem">
+            <figure class="buttons" style="margin:0 0.5rem" aria-label="sidebar control">
                 <button id="open-sidebar" aria-label="menu">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         stroke="#E0E6EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-menu">
+                        class="feather feather-menu" aria-hidden="true">
                         <line x1="3" y1="12" x2="21" y2="12"></line>
                         <line x1="3" y1="6" x2="21" y2="6"></line>
                         <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -54,10 +54,10 @@
             <a href="#about" class="logo1" aria-label="logo">LOGO</a>
         </nav>
         <!--END OF MOBILE NAV-->
-        <header id="header" aria-label="header">
+        <header aria-label="header">
             <a href="#about" class="logo2" aria-label="logo">LOGO</a>
-            <nav id="desktop-nav" aria-label="desktop navigation">
-                <ul class="nav-links" aria-label="navigation links">
+            <nav id="desktop-nav" aria-label="desktop-navigation">
+                <ul class="nav-links">
                     <li><a href="#">Home</a></li>
                     <li><a href="#benefits">Benefits</a></li>
                     <li><a href="#credit_cards">Credit Cards</a></li>
@@ -69,8 +69,8 @@
             <!--END OF DESKTOP NAV-->
         </header>
         <!--END OF HEADER-->
-        <section id="about">
-            <figure class="container">
+        <section id="about" aria-labelledby="about">
+            <figure class="container" aria-label="about content">
                 <article class="about-article">
                     <a href="apply.html">
                         <h1>Credit Card Provider</h1>
@@ -89,18 +89,22 @@
                     </a>
                 </article>
                 <img srcset="./imgs/5360846_Credit-cardw450.webp 450w, ./imgs/5360846_Credit-card.webp 1000w, imgs/5360846_Credit-card.jpg 1000w"
-                    fetchpriority="high" src="./imgs/5360846_Credit-card.jpg" alt="credit card" width="1000"
-                    height="1000" class='about-picture' 
+                    fetchpriority="high" 
+                    src="./imgs/5360846_Credit-card.jpg" 
+                    alt="credit card" 
+                    width="1000"
+                    height="1000" 
+                    class='about-picture' 
                 />
             </figure>
         </section>
-        <section id="benefits" aria-label="benefits">
+        <section id="benefits" aria-labelledby="benefits">
             <h2>Benefits</h2>
-            <figure class="container">
+            <figure class="container" aria-label="benefits content">
                 <article class="benefits-column">
                     <svg class="svg" xmlns="http://www.w3.org/2000/svg" min-width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-globe">
+                        class="feather feather-globe" aria-hidden="true">
                         <circle cx="12" cy="12" r="10"></circle>
                         <line x1="2" y1="12" x2="22" y2="12"></line>
                         <path
@@ -111,28 +115,28 @@
                     <p>10% Off Tickets
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Travel Insurance
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Trip Delay Insurance
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Car Rental Insurance
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
@@ -140,7 +144,7 @@
                 <article class="benefits-column">
                     <svg class="svg" xmlns="http://www.w3.org/2000/svg" min-width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-dollar-sign">
+                        class="feather feather-dollar-sign" aria-hidden="true">
                         <line x1="12" y1="1" x2="12" y2="23"></line>
                         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                     </svg>
@@ -148,28 +152,28 @@
                     <p>5% Cash Back
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Statement Credit
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Purchase Protection
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Reedemable Points
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
@@ -177,7 +181,7 @@
                 <article class="benefits-column">
                     <svg class="svg" xmlns="http://www.w3.org/2000/svg" min-width="24" height="24" viewBox="0 0 24 24"
                         fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-credit-card">
+                        class="feather feather-credit-card" aria-hidden="true">
                         <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
                         <line x1="1" y1="10" x2="23" y2="10"></line>
                     </svg>
@@ -185,28 +189,28 @@
                     <p>Lock Card
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Fraud Alerts
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Global Hotline
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
                     <p>Card Replacement
                         <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" class="feather feather-check">
+                            stroke-linejoin="round" class="feather feather-check" aria-hidden="true">
                             <polyline points="20 6 9 17 4 12"></polyline>
                         </svg>
                     </p>
@@ -215,16 +219,20 @@
             </figure>
         </section>
         <!--END OF BENEFITS SECTION-->
-        <section id="credit_cards" class="credit_section" aria-label="credit cards">
+        <section id="credit_cards" class="credit_section" aria-labelledby="credit_cards">
             <h2>Credit Cards</h2>
-            <figure class="container">
-                <figure class="creditcard">
+            <figure class="container" aria-label="credit card content">
+                <figure class="creditcard" aria-label="platinum card content">
                     <a href="apply.html">
                         <article>
                             <picture class="image">
                                 <source srcset="./imgs/pexels-rodnae-productions-7821482.avif" type="image/avif">
-                                <img src="./imgs/pexels-rodnae-productions-7821482.jpg" width="640" height="427"
-                                    loading="lazy" alt="back of credit card"
+                                <img 
+                                    src="./imgs/pexels-rodnae-productions-7821482.jpg" 
+                                    width="640" 
+                                    height="427"
+                                    loading="lazy" 
+                                    alt="back of credit card"
                                 >
                             </picture>
                             <h3>Platinum Card</h3>
@@ -234,7 +242,7 @@
                             <button class="btn">apply now
                                 <svg xmlns="http://www.w3.org/2000/svg" min-width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    stroke-linejoin="round" class="feather feather-chevron-right" aria-hidden="true">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </button>
@@ -242,13 +250,17 @@
                     </a>
                 </figure>
                 <!--END OF FIRST CREDIT CARD-->
-                <figure class="creditcard">
+                <figure class="creditcard" aria-label="cash card content">
                     <a href="apply.html">
                         <article>
                             <picture class="image">
                                 <source srcset="./imgs/pexels-skitterphoto-332304.avif" type="image/avif">
-                                <img src="./imgs/pexels-skitterphoto-332304 (1).jpg" width="640" height="427"
-                                    loading="lazy" alt="coins"
+                                <img 
+                                    src="./imgs/pexels-skitterphoto-332304 (1).jpg" 
+                                    width="640" 
+                                    height="427"
+                                    loading="lazy" 
+                                    alt="coins"
                                 >
                             </picture>
                             <h3>Cash Card</h3>
@@ -258,7 +270,7 @@
                             <button class="btn">apply now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    stroke-linejoin="round" class="feather feather-chevron-right" aria-hidden="true">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </button>
@@ -266,13 +278,17 @@
                     </a>
                 </figure>
                 <!--END OF SECOND CREDIT CARD-->
-                <figure class="creditcard">
+                <figure class="creditcard" aria-label="personal card content">
                     <a href="apply.html">
                         <article>
                             <picture class="image">
                                 <source srcset="./imgs/pexels-rodnae-productions-7821679.avif" type="image/avif">
-                                <img src="./imgs/pexels-rodnae-productions-7821679 (1).jpg" width="640" height="427"
-                                    loading="lazy" alt="credit card"
+                                <img 
+                                    src="./imgs/pexels-rodnae-productions-7821679 (1).jpg" 
+                                    width="640" 
+                                    height="427"
+                                    loading="lazy" 
+                                    alt="credit card"
                                 >
                             </picture>
                             <h3>Personal Card</h3>
@@ -283,7 +299,7 @@
                             <button class="btn">apply now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    stroke-linejoin="round" class="feather feather-chevron-right" aria-hidden="true">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </button>
@@ -291,13 +307,17 @@
                     </a>
                 </figure>
                 <!--END OF THIRD CREDIT CARD-->
-                <figure class="creditcard">
+                <figure class="creditcard" aria-label="business card content">
                     <a href="apply.html">
                         <article>
                             <picture class="image">
                                 <source srcset="./imgs/markus-winkler-DJoG5GsXfMw-unsplash.avif" type="image/avif">
-                                <img src="./imgs/markus-winkler-DJoG5GsXfMw-unsplash.jpg" width="640" height="427"
-                                    loading="lazy" alt="paperwork"
+                                <img 
+                                    src="./imgs/markus-winkler-DJoG5GsXfMw-unsplash.jpg" 
+                                    width="640" 
+                                    height="427"
+                                    loading="lazy" 
+                                    alt="paperwork"
                                 >
                             </picture>
                             <h3>Business Card</h3>
@@ -309,7 +329,7 @@
                             <button class="btn">apply now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    stroke-linejoin="round" class="feather feather-chevron-right" aria-hidden="true">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </button>
@@ -317,13 +337,17 @@
                     </a>
                 </figure>
                 <!--END OF FOURTH CREDIT CARD-->
-                <figure class="creditcard">
+                <figure class="creditcard" aria-label="bit coin card content">
                     <a href="apply.html">
                         <article>
                             <picture class="image">
                                 <source srcset="./imgs/dmitry-demidko-z4VuRg-ZOEg-unsplash.avif" type="image/avif">
-                                <img src="./imgs/dmitry-demidko-z4VuRg-ZOEg-unsplash.jpg" width="640" height="427"
-                                    loading="lazy" alt="bitcoin card"
+                                <img 
+                                    src="./imgs/dmitry-demidko-z4VuRg-ZOEg-unsplash.jpg" 
+                                    width="640" 
+                                    height="427"
+                                    loading="lazy" 
+                                    alt="bitcoin card"
                                 >
                             </picture>
                             <h3>Bit Coin Card</h3>
@@ -334,7 +358,7 @@
                             <button class="btn">apply now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    stroke-linejoin="round" class="feather feather-chevron-right" aria-hidden="true">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </button>
@@ -342,13 +366,17 @@
                     </a>
                 </figure>
                 <!--END OF FIFTH CREDIT CARD-->
-                <figure class="creditcard">
+                <figure class="creditcard" aria-label="rewards card content">
                     <a href="apply.html">
                         <article>
                             <picture class="image">
                                 <source srcset="./imgs/markus-winkler-ahjzVINkuCs-unsplash.avif" type="image/avif">
-                                <img src="./imgs/markus-winkler-ahjzVINkuCs-unsplash.jpg" width="640" height="427"
-                                    loading="lazy" alt="black credit card"
+                                <img 
+                                    src="./imgs/markus-winkler-ahjzVINkuCs-unsplash.jpg" 
+                                    width="640" 
+                                    height="427"
+                                    loading="lazy" 
+                                    alt="black credit card"
                                 >
                             </picture>
                             <h3>Rewards Card</h3>
@@ -359,7 +387,7 @@
                             <button class="btn">apply now
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-chevron-right">
+                                    stroke-linejoin="round" class="feather feather-chevron-right" aria-hidden="true">
                                     <polyline points="9 18 15 12 9 6"></polyline>
                                 </svg>
                             </button>
@@ -370,7 +398,7 @@
             </figure>
         </section>
         <!--END OF CREDIT CARDS SECTION-->
-        <footer id="footer" aria-label="footer">
+        <footer aria-label="footer">
             <section id="footer-main">
                 <article class="footer-column">
                     <h3 class="footer-title">Permalinks</h3>
@@ -419,48 +447,48 @@
             <!--END OF FOOTER MAIN SECTION-->
             <section id="footer-socials" aria-label="social media">
                 <ul class="footer-icons">
-                    <li><a href="#" aria-label="facebook">
+                    <li><a href="https://www.facebook.com">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-facebook">
+                                stroke-linejoin="round" class="feather feather-facebook" aria-label="facebook">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="twitter">
+                    <li><a href="https://twitter.com/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-twitter">
+                                stroke-linejoin="round" class="feather feather-twitter" aria-label="twitter">
                                 <path
                                     d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
                                 </path>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="instagram">
+                    <li><a href="https://www.instagram.com/">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-instagram">
+                                stroke-linejoin="round" class="feather feather-instagram" aria-label="instagram">
                                 <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
                                 <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="github">
+                    <li><a href="https://github.com">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-github">
+                                stroke-linejoin="round" class="feather feather-github" aria-label="github">
                                 <path
                                     d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
                                 </path>
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="linkedin">
+                    <li><a href="https://www.linkedin.com">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-linkedin">
+                                stroke-linejoin="round" class="feather feather-linkedin" aria-label="linkedin">
                                 <path
                                     d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
                                 </path>
@@ -469,10 +497,10 @@
                             </svg>
                         </a>
                     </li>
-                    <li><a href="#" aria-label="youtube">
+                    <li><a href="https://www.youtube.com">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                 fill="none" stroke="#E0E6EB" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round" class="feather feather-youtube">
+                                stroke-linejoin="round" class="feather feather-youtube" aria-label="youtube">
                                 <path
                                     d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
                                 </path>
@@ -488,7 +516,7 @@
                     <ul class="footer-legal-items">
                         <li><a href="#">Terms &amp; Conditions</a></li>
                         <li><a href="#">Privacy Policy</a></li>
-                        <li>Made by <a href="https://cgathua.pages.dev/" target="_blank">@cgathua</a></li>
+                        <li>Made by <a href="https://cgathua.pages.dev/" target="_blank" aria-label="link to @cgathua">@cgathua</a></li>
                     </ul>
                 </small>
             </section>

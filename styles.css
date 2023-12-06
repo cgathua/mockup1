@@ -282,20 +282,20 @@ figcaption {
 
 /* END OF CREDIT CARDS STYLING */
 
-footer[id="footer"] li {
+footer li {
     list-style: none;
 }
 
-footer[id="footer"] {
+footer {
     background-color: var(--color-primary);
     color: var(--color-secondary);
 }
 
-footer[id="footer"] a {
+footer a {
     color: var(--color-secondary);
 }
 
-footer[id="footer"] a:hover {
+footer a:hover {
     color: var(--color-tertiary);
 }
 
@@ -534,6 +534,7 @@ label[class="label5"] input[type="submit"] {
     border-color: var(--color-white);
     min-width: 250px;
     text-transform: uppercase;
+    padding: 0;
 }
 
 article[class="application"] a {
@@ -555,9 +556,15 @@ select:focus-visible {
     border-radius: 3px;
 }
 
-.drop_down_menu {
-    background-color: var(--color-secondary);
+input[type="date"] {
+    background-color: var(--color-white);
     color: var(--color-primary);
+}
+
+.drop_down_menu {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    border-color: var(--color-primary);
 }
 
 /* END OF APPLY STYLING */
@@ -661,7 +668,7 @@ input[class="sign_in"] {
         position: relative;
     }
 
-    header[id="header"] {
+    header {
         position: fixed;
         width: 100%;
         top: 0;
