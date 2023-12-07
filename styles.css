@@ -308,6 +308,11 @@ article[class="footer-column"] p {
     min-width: 12.5rem;
 }
 
+.footer-column a {
+    line-height: 2rem;
+}
+
+
 section[id="footer-main"] {
     padding: 1.25rem 1.875rem;
     display: flex;
@@ -611,6 +616,11 @@ input[class="sign_in"] {
 
 .forgot-password a:hover {
     text-decoration: underline;
+}
+
+.reminder-prompt {
+    display: flex;
+    flex-direction: column;
 }
 
 /* END OF SIGNIN STYLING */
