@@ -145,7 +145,8 @@ bento-sidebar[id="sidebar1"] {
 }
 
 bento-sidebar[id="sidebar1"] li {
-    padding: 1rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
     cursor: pointer;
 }
 
