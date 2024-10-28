@@ -240,7 +240,7 @@ section[class="credit_section"] {
 }
 
 section[class="credit_section"] h3,
-p {
+p, ul {
     color: var(--color-primary);
 }
 
@@ -273,11 +273,14 @@ figcaption svg {
 figcaption {
     padding-top: 2rem;
 }
-
 .creditcard figcaption {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cards >li {
+    list-style: inside;
 }
 
 .image {
@@ -663,6 +666,17 @@ input[class="sign_in"] {
 
     section[class="credit_section"] .container {
         grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    }
+
+    figure[class="creditcard"] {
+        height: 100%;
+        position: relative;
+    }
+
+    .creditcard figcaption .btn {
+        margin-top: auto;
+        position: absolute;
+        bottom: 0;
     }
 }
 
