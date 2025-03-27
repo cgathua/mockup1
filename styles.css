@@ -175,8 +175,12 @@ section[id="about"] .container {
     grid-template-columns: minmax(min-content, 1fr);
     place-items: center;
     gap: 1rem;
+    width: 100%;
 }
 
+.about-article {
+    width: var(--container-large);
+}
 .about-picture {
     aspect-ratio: 1/1;
 }
